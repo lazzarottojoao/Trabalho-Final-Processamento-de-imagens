@@ -1,0 +1,256 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#tela {
+    display: none;
+}
+
+#tela2 {
+    display: none;
+}
+
+input[type="file"] {
+    margin: 10px;
+}
+
+input[type="number"] {
+    width: 60px;
+    margin: 10px;
+}
+
+input[type="range"] {
+    width: 200px;
+    margin: 10px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.container-imagem {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.container-imagem img {
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    border: 1px solid #ddd;
+    padding: 5px;
+    background-color: white;
+    object-fit: contain;
+}
+
+.botoes-operacao {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.botoes-operacao button {
+    margin: 5px;
+}
+
+.entradas-valor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.entradas-valor div {
+    margin: 0 10px;
+}
+
+.mensagem-erro {
+    color: red;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#botaoDownload {
+    margin-top: 20px;
+    background-color: #2196F3;
+}
+
+#botaoDownload:hover {
+    background-color: #0b7dda;
+}
+
+#botaoDownload2 {
+    margin-top: 20px;
+    background-color: #2196F3;
+}
+
+#botaoDownload2:hover {
+    background-color: #0b7dda;
+}
+
+.blending-controls {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.blending-controls label {
+    margin-right: 10px;
+}
+
+.valor-alpha {
+    width: 40px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.secao-operacoes {
+    margin-top: 15px;
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.secao-operacoes h3 {
+    margin-bottom: 10px;
+}
+
+.operacoes-logicas button {
+    background-color: #9C27B0;
+}
+
+.operacoes-logicas button:hover {
+    background-color: #7B1FA2;
+}
+
+.entrada-limiar {
+    margin: 10px 0;
+}
+
+.secao-histograma {
+    margin-top: 15px;
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.secao-histograma h3 {
+    margin-bottom: 10px;
+}
+
+.botoes-histograma button {
+    background-color: #FF5722;
+}
+
+.botoes-histograma button:hover {
+    background-color: #E64A19;
+}
+
+.histograma-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.histograma-item {
+    width: 500px;
+    height: 250px;
+    border: 1px solid #ddd;
+    background-color: white;
+    padding: 10px;
+}
+
+.histograma-legenda {
+    margin-top: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.botoes-download {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.secao-filtros {
+    margin-top: 15px;
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.secao-filtros h3 {
+    margin-bottom: 10px;
+}
+
+.botoes-filtros button {
+    background-color: #795548;
+}
+
+.botoes-filtros button:hover {
+    background-color: #5D4037;
+}
+
+.botoes-morfologicas button {
+    background-color: #10c0ec;
+}
+
+.botoes-morfologicas button:hover {
+    background-color: #074c5e;
+}
+
+.botoes-bordas button {
+    background-color: #ec1111;
+}
+
+.botoes-bordas button:hover {
+    background-color: #810c0c;
+}
+
+.controles-filtros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.controles-filtros label {
+    margin-right: 10px;
+}
+
+.valor-kernel {
+    width: 40px;
+    text-align: center;
+    margin-left: 10px;
+}
