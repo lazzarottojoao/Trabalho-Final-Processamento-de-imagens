@@ -171,6 +171,119 @@
 
     <div id="mensagemErro" class="mensagem-erro"></div>
 
+    <h1>Conversor de Cores RGB/HSV/CMYK</h1>
+    
+    <div class="conversor-container">
+        <h2 class="conversor-titulo">RGB para HSV/CMYK/Escala de Cinza</h2>
+    
+        <div class="secao-conversao">
+            <div class="entrada-grupo">
+                <label>R:</label>
+                <input type="range" id="rgbR" min="0" max="255" value="255">
+                <input type="number" id="rgbRNum" min="0" max="255" value="255">
+            </div>
+            <div class="entrada-grupo">
+                <label>G:</label>
+                <input type="range" id="rgbG" min="0" max="255" value="0">
+                <input type="number" id="rgbGNum" min="0" max="255" value="0">
+            </div>
+            <div class="entrada-grupo">
+                <label>B:</label>
+                <input type="range" id="rgbB" min="0" max="255" value="0">
+                <input type="number" id="rgbBNum" min="0" max="255" value="0">
+            </div>
+            <div class="entrada-grupo">
+                <label>Preview:</label>
+                <div id="rgbPreview" class="cor-preview"></div>
+            </div>
+        </div>
+    
+        <button class="botao-converter" onclick="converterRGB()">Converter RGB</button>
+    
+        <div class="resultado-grupo">
+            <div><strong>RGB Normalizado:</strong> <span id="rgbNormalizado">R: 1.00, G: 0.00, B: 0.00</span></div>
+            <div><strong>HSV:</strong> <span id="hsvResultado">H: 0°, S: 100%, V: 100%</span></div>
+            <div><strong>CMYK:</strong> <span id="cmykResultado">C: 0%, M: 100%, Y: 100%, K: 0%</span></div>
+            <div><strong>Escala de Cinza:</strong> <span id="cinzaResultado">76</span></div>
+        </div>
+    </div>
+    
+    <div class="conversor-container">
+        <h2 class="conversor-titulo">HSV para RGB</h2>
+    
+        <div class="secao-conversao">
+            <div class="entrada-grupo">
+                <label>H:</label>
+                <input type="range" id="hsvH" min="0" max="360" value="0">
+                <input type="number" id="hsvHNum" min="0" max="360" value="0">
+                <span>°</span>
+            </div>
+            <div class="entrada-grupo">
+                <label>S:</label>
+                <input type="range" id="hsvS" min="0" max="100" value="100">
+                <input type="number" id="hsvSNum" min="0" max="100" value="100">
+                <span>%</span>
+            </div>
+            <div class="entrada-grupo">
+                <label>V:</label>
+                <input type="range" id="hsvV" min="0" max="100" value="100">
+                <input type="number" id="hsvVNum" min="0" max="100" value="100">
+                <span>%</span>
+            </div>
+            <div class="entrada-grupo">
+                <label>Preview:</label>
+                <div id="hsvPreview" class="cor-preview"></div>
+            </div>
+        </div>
+    
+        <button class="botao-converter" onclick="converterHSV()">Converter HSV</button>
+    
+        <div class="resultado-grupo">
+            <div><strong>RGB:</strong> <span id="hsvParaRgbResultado">R: 255, G: 0, B: 0</span></div>
+        </div>
+    </div>
+    
+    <div class="conversor-container">
+        <h2 class="conversor-titulo">CMYK para RGB</h2>
+    
+        <div class="secao-conversao">
+            <div class="entrada-grupo">
+                <label>C:</label>
+                <input type="range" id="cmykC" min="0" max="100" value="0">
+                <input type="number" id="cmykCNum" min="0" max="100" value="0">
+                <span>%</span>
+            </div>
+            <div class="entrada-grupo">
+                <label>M:</label>
+                <input type="range" id="cmykM" min="0" max="100" value="100">
+                <input type="number" id="cmykMNum" min="0" max="100" value="100">
+                <span>%</span>
+            </div>
+            <div class="entrada-grupo">
+                <label>Y:</label>
+                <input type="range" id="cmykY" min="0" max="100" value="100">
+                <input type="number" id="cmykYNum" min="0" max="100" value="100">
+                <span>%</span>
+            </div>
+            <div class="entrada-grupo">
+                <label>K:</label>
+                <input type="range" id="cmykK" min="0" max="100" value="0">
+                <input type="number" id="cmykKNum" min="0" max="100" value="0">
+                <span>%</span>
+            </div>
+            <div class="entrada-grupo">
+                <label>Preview:</label>
+                <div id="cmykPreview" class="cor-preview"></div>
+            </div>
+        </div>
+    
+        <button class="botao-converter" onclick="converterCMYK()">Converter CMYK</button>
+    
+        <div class="resultado-grupo">
+            <div><strong>RGB:</strong> <span id="cmykParaRgbResultado">R: 255, G: 0, B: 0</span></div>
+        </div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
 
     <script>
@@ -192,6 +305,7 @@
     <script src="deteccao_de_bordas.js"></script>
     <script src="morfologicas.js"></script>
     <script src="main.js"></script>
+    <script src="cores.js"></script>
 </body>
 
 </html>

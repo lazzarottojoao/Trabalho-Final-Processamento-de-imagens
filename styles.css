@@ -254,3 +254,81 @@ button:hover {
     text-align: center;
     margin-left: 10px;
 }
+
+.conversor-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.conversor-titulo {
+    color: #333;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.entrada-grupo {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.entrada-grupo label {
+    min-width: 60px;
+    font-weight: bold;
+}
+
+.entrada-grupo input {
+    width: 80px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.entrada-grupo input[type="range"] {
+    width: 150px;
+}
+
+.cor-preview {
+    width: 100px;
+    height: 50px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.resultado-grupo {
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.resultado-grupo strong {
+    display: inline-block;
+    min-width: 80px;
+}
+
+.botao-converter {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 5px;
+}
+
+.botao-converter:hover {
+    background: #45a049;
+}
+
+.secao-conversao {
+    margin-bottom: 30px;
+}
