@@ -22,7 +22,7 @@ link do site: https://joaovl-processamento-imagens.netlify.app
 - **Inversão de imagem (horizontal e vertical).**
 - **Diferença entre duas imagens.**
 - **Combinação Linear** (Blending) e **Média de duas imagens**.
-- **Operações Lógicas** (AND, OR, NOT, XOR) em imagens binárias.
+- **Operações Lógicas** (AND, OR, NOT, XOR).
 - **Equalização de Histograma.**
 - **Limiarização de Imagens.**
 
